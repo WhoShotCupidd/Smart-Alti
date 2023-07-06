@@ -13,7 +13,7 @@ Joesph Du - Designing the front end to display all data collected by the board.
 ## Tasks
 
 
-# Known Issues
+## Known Issues
 
 
 
