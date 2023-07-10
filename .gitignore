@@ -1,6 +1,9 @@
 #settings
 .settings/
 
+#DS Store
+.DS_Store
+
 #metadata
 .metadata/
 
