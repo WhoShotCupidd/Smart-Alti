@@ -132,28 +132,12 @@ nav .fa{
     }
 }
 
-/*
-header button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-header button:hover {
-    background-color: rgba(0,136,169,0.8);
-}
-*/
-
-/* Styling for .home-banneranner */
+/* Styling for home-banner */
 
 .home-banner {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/skydive_background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../images/skydive_background.jpg");
     background-size: center;
     background-size: cover;
     position: relative;
@@ -197,7 +181,7 @@ header button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
-/* styling for product-description */
+/* styling for home product-description */
 
 .row{
     margin-top: 5%;
@@ -267,7 +251,7 @@ header button:hover {
     }
 }
 
-/* features banner style */
+/* home features banner style */
 
 .features-banner{
     width: 100%;
@@ -324,6 +308,8 @@ header button:hover {
         flex-direction: column;
     }
 }
+
+/* home community post styling */
 
 .community-posts{
     margin: 100px;
@@ -429,7 +415,7 @@ header button:hover {
     font-size: 15px;
 }
 
-/*responsive*/
+/* footer responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -443,3 +429,30 @@ header button:hover {
 }
 
 
+/* About page banner styling */
+
+.about-banner {
+    min-height: 40vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../images/skydive_background.jpg");
+    background-size: center;
+    background-size: cover;
+    position: relative;
+    z-index: 50;
+}
+
+.about-text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.about-text-box h1 {
+    font-size: 62px;
+    font-family: "Montserrat", sans-serif;
+}
