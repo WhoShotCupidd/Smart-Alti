@@ -6,27 +6,168 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Smart Alti </title>
         <link rel="stylesheet" href="style.css">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
 
     <body>
+    
         <header>
-            <img class="logo" src="images/logo.jpg" alt="logo">
+            <a class="logo" href="index.html"><img src="images/logo.jpg" alt="logo"></a>
             <nav>
-                <ul class="nav_links">
-                    <li><a href="#">Sign Up</a> </li>
-                    <li><a href="#">Login In</a> </li>
-                    <li><a href="#">About</a> </li>
-                </ul>
+                <div class="sideBar" id="sideBar">
+                    <i class="fa solid fa-x" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul class="nav-links">
+                        <li><a href="#">Sign Up</a> </li>
+                        <li><a href="#">Login</a> </li>
+                        <li><a href="#">About Us</a> </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i id="bars" class="fa solid fa-bars"style="color: #ffffff;" onclick="showMenu()"></i>
             </nav>
-            <a class="cta" href="#"><button>Contact</button></a>
         </header>
+
+        <!--GO LOOK AT THE ROW CLASS-->
+
+
+        <main>
             
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+
+            <section class="home-banner">
+                <div class="text-box">
+                    <h1>Next-Gen SkyDive Tech</h1>
+                    <p>We are producing the newest and most advanced smart altimeter<br> to make diving more safe and fun</p>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="product-row">
+                    <div class="product-col"> 
+                        <h1>Smart Altimeter</h1>
+                        <p>Teatime like I got a cup of this shit
+                            Tee time like golf at a quarter to six
+                            I'd love to fuck on a regular bitch
+                            Famous hoes lame but they stay on my dick
+                            Heard your new joint, it's embarrassing, shit
+                            You talk to the cops on some therapist shit
+                            You act like you love this American shit
+                            But, really, the truth is you scared of the 6
+                            Yeah, you scared of the 6
+                            Yeah, you scared of the 6
+                            Your bodyguard put in some work on a fluke
+                            Now you wanna go and inherit that shit
+                            Don't talk to the boy 'bout comparisons, shit
+                            Or come to the boy on some arrogant shit
+                            The weapons we got are some terrorist shit
+                            Like TV producers we, grr, we airing this shit
+                            She askin' for bread for her parents and shit
+                            I told her, "I don't got no cash", and she said she could wait on a rack, on some Arabic shit
+                            I pull out a million and stare at the shit
+                            My dick just got hard 'cause a wire just hit
+                            My schedule is out, come spin us, for real
+                            Man, fuck all that spinnin' the narrative shit
+                            I melt down the chains that I bought from yo' boss
+                            Give a fuck about all of that heritage shit
+                            Since V not around, the members done hung up the Louis, they not even</p>
+                        <a href="">Learn More</a>
+                    </div>
+                    <div class="product-col">
+                        <img src="images/product.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-banner">
+                <h1>Online Features</h1>
+                <p>We offer a variety of stats that you can view by making a account</p>
+                <div class="features-row">
+                    <div class="features-col">
+                        <img src="images/drake.jpg">
+                        <h3>Log Book</h3>
+                        <p>You can view your log book to see all your recent jumps</p>
+                    </div>
+                    <div class="features-col">
+                        <img src="images/drake.jpg">
+                        <h3>Log Book</h3>
+                        <p>You can view your log book to see all your recent jumps</p>
+                    </div>
+                    <div class="features-col">
+                        <img src="images/drake.jpg">
+                        <h3>Log Book</h3>
+                        <p>You can view your log book to see all your recent jumps</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="community-posts">
+                <h1>placeholder for some reviews or comunity posts when we have them</h1>
+            </section>
+
+        </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="">stuff to add</a></li>
+                        <li><a href="">stuff to add</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="">stuff to add</a></li>
+                        <li><a href="">stuff to add</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="">stuff to add</a></li>
+                        <li><a href="">stuff to add</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright stuff</p>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("sideBar");
+
+        function showMenu(){
+            sideBar.style.right = "0";
+        }
+
+        function hideMenu(){
+            sideBar.style.right = "-200px";
+        }
+
+    </script>
 
     </body>
-
-    <footer>
-
-    </footer>
 
 
 </html>
