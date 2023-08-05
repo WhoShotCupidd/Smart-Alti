@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Smart Alti </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    </head>
+
+    <body>
+    
+        <header>
+            <a class="logo" href="index.html"><img src="../images/logo.jpg" alt="logo"></a>
+            <nav>
+                <div class="sideBar" id="sideBar">
+                    <i class="fa solid fa-x" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul class="nav-links">
+                        <li><a href="#">Sign Up</a> </li>
+                        <li><a href="#">Login</a> </li>
+                        <li><a href="#">About Us</a> </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i id="bars" class="fa solid fa-bars"style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+        </header>
+
+        <main>
+
+            <section class="about-banner">
+                <div class="about-text-box">
+                    <h1>About Us</h1>
+                </div>
+            </section>
+
+            <section class="about-info">
+                <div class="about-info-row">
+                    <div class="about-info-col">
+                        <h3>Product name</h3>
+                        <p>Greetings, dear fellow wanderers of life! I am Christiaan Venter, a kaleidoscope of passions, dreams, and boundless curiosity. Embarking on this cosmic journey called existence, I find myself fervently embracing the colorful tapestry of experiences that life unfolds before me.
+                            An avid explorer of the mind and heart, I revel in the art of understanding the human psyche. By day, you might find me deciphering the enigmatic language of dreams, for I am a dreamweaver, navigating the ethereal realm with an insatiable thirst for the hidden meanings that lie within our slumbering minds.
+                            When the stars grace the night sky, I gracefully transition into an intrepid stargazer. Armed with my trusty telescope, I immerse myself in the vastness of the universe, marveling at the distant galaxies and celestial wonders that hold the secrets of our cosmic heritage.
+                            Amidst these contemplative pursuits, I also find solace in the realm of music. As a multi-instrumentalist, I orchestrate symphonies of emotions, giving voice to the ineffable sentiments that words often fail to convey.
+                            Beyond the realms of the mind and the arts, I am a fervent advocate for environmental conservation. Driven by an ardent love for Mother Nature, I endeavor to tread lightly upon this precious planet, sowing seeds of environmental consciousness wherever I wander.
+                            In the grand symphony of life, I dance to the rhythm of serendipity, embracing the beauty of chance encounters and meaningful connections. I am Christiaan Venter, a mere soul seeking the extraordinary amidst the ordinary, forever eager to embark on new adventures, forge bonds, and make this world a brighter place, one dream, one melody, and one step at a time.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+
+
+</html>
